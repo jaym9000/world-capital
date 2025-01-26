@@ -3,6 +3,12 @@ src = 'contracts'
 out = 'out'
 libs = ['lib']
 fs_permissions = [{ access = "read-write", path = "./"}]
+remappings = [
+    "@openzeppelin/contracts=lib/openzeppelin-contracts",
+    "@openzeppelin/contracts/token/ERC20=lib/openzeppelin-contracts/contracts/token/ERC20",
+    "@openzeppelin/contracts/access=lib/openzeppelin-contracts/contracts/access",
+    "@openzeppelin/contracts/utils=lib/openzeppelin-contracts/contracts/utils",
+]   
 
 
 [rpc_endpoints]
